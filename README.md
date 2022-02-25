@@ -1,2 +1,2 @@
-# 5th-Sem_Minor-Project
-This  reporsitory is being used as a hosting platform for This project
+# This is My Minor project for BCA 5th Semester.
+I will be building this site day by day and pushing those updates in Github.

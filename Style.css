@@ -1,0 +1,501 @@
+
+ * {
+ 	margin: 0px;
+ 	padding: 0px;
+ 	box-sizing: border-box;
+ }
+ body 
+ {
+	 background-image: linear-gradient(to left, #20242A 0%, black 100%);	
+
+}
+
+
+ nav{
+ 	display: flex;
+ 	justify-content: space-around;
+	align-items: center;
+    min-height: 8vh;
+	margin-top: 10px;
+ 	font-family: 'Poppins', sans-serif; 
+
+ }
+
+
+ .logo {
+	 color: rgb(214, 212, 212);
+	 letter-spacing : 2px;
+	 font-size: 27px;
+		cursor: grabbing;
+	box-shadow:2px solid blue;
+	
+
+ }
+ .nav-links {
+	 display: flex;
+	 width:  40%;
+	 justify-content: space-around;
+ }
+ .nav-links li
+ {
+	list-style: none;
+
+ }
+
+ .nav-links a{
+	color: rgb(147, 255, 6);
+	background-color: rgba(255, 255, 255, 0.061);
+	padding: 10px;
+	 text-decoration: none;
+	 letter-spacing: 1px;
+	 font-size: 18px;
+	 font-weight: 500;
+	border-radius: 10px;
+ }
+ .nav-links li :hover{
+
+	 text-decoration: none;
+	 letter-spacing: 1px;
+	background-color: rgb(255, 0, 0);
+	border-radius: 10px;
+	color: white;
+}
+
+
+ .burger {
+	 display: none;
+ }
+ .burger div
+ {
+	 width: 25px;
+	 height: 5px;
+	 background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+	margin: 5px;
+	transition: all 0.3s ease;
+
+ }
+
+.purpose
+{
+	color: white;
+}
+.intro{
+	display: flex;
+	color: rgb(0, 255, 106);
+	text-align: center;
+	width: 1110px;
+	font-size:120px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 100;
+	left: 50px;
+	font-family: 'Chakra Petch', sans-serif;
+	left: -100%;
+	animation: anim3 4s forwards 1s;
+	cursor: pointer;
+	font-style: normal;
+}
+.intro .about{
+	display: flex;
+	color: rgb(250, 250, 250);
+	position: absolute;
+	margin-top: 100px;
+	top: 400;
+	font-size:20px;
+	margin-bottom: 40px;
+}
+
+@keyframes anim3 {
+	from{
+		left: -100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+/* Todo : Animated Button in Css */
+
+.container
+{
+    display: flex;
+    justify-content: left;
+	margin-left: 350px;
+    align-items: center;
+    flex-direction: row;
+	margin-top: 180px;
+	position: relative;
+}
+.container a
+{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    display: inline-block;
+    background: #fff;
+    margin: 20px;
+
+}
+.container a:before,
+.container a:after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: crimson;
+    transition: 0.5s;
+}
+.container a:nth-child(1):before,
+.container a:nth-child(1):after
+{
+    background: linear-gradient(45deg,#00ccff, #0e1538, #0e1538,
+ #d400d4);
+}
+.container a:nth-child(2):before,
+.container a:nth-child(2):after
+{
+    background: linear-gradient(45deg,#FF075B, #0e1538, #0e1538,
+ #1AFF22);
+}
+
+.container a:hover:before
+{
+    inset: -3px;
+}
+.container a:hover::after
+{
+    inset: -3px;
+    filter: blur(10px);
+}
+.container a span
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #111010;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+	padding: 10px;
+    /* border: 1px solid #040a29; */
+}
+.container a span ::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.075);
+}
+
+.bca
+{
+	color: cyan;
+}
+
+ /* Todo: LEt's Style The Footer part. */
+ footer
+ {
+ 	position: absolute;
+ 	width: 100%;
+ 	background: #06bcfb;
+ 	min-height: 100px;
+ 	padding: 20px 50px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+ 	bottom: -240px;
+ }
+footer .social_icon, footer .menu
+{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 10px 0;
+}
+
+footer .social_icon li,footer .menu li
+{
+	list-style: none;
+
+}
+footer .social_icon li a
+{
+	font-size: 2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+footer .menu li a
+{
+	font-size: 1.2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	text-decoration: none;
+	opacity: 0.75;
+}
+footer .social_icon li a:hover	
+{
+	transform: translateY(-10px);
+}
+footer .menu li a:hover
+{
+	opacity: 1;
+}
+footer p
+{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+
+}
+footer .wave
+{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 125px;
+	background:  url(wave.png);
+	background-size: 1000px 100px;
+}
+footer .wave#wave1
+{
+	z-index: 1000;
+	opacity: 0.9;
+	bottom: 0;
+	animation: animateWave 4s  linear infinite;
+}
+
+@keyframes animateWave 
+{
+	0%
+	{
+		background-position-x : 1000px;
+	}
+	100%
+	{
+		background-position-x: 0px;
+	}
+}
+
+footer .wave#wave2
+{
+	z-index: 999;
+	opacity: 0.2;
+	bottom: 10px;
+	animation: animateWave_02 4s  linear infinite;
+}
+
+@keyframes animateWave_02
+{
+	0%
+	{
+		background-position-x : 0px;
+	}
+	100%
+	{
+		background-position-x: 1000px;
+	}
+}
+footer .wave#wave3
+{
+	z-index: 999;
+	opacity: 0.1;
+	bottom: 15px;
+	animation: animateWave_03 3s  linear infinite;
+}
+
+@keyframes animateWave_03
+{
+	0%
+	{
+		background-position-x : 0px;
+	}
+	100%
+	{
+		background-position-x: 1000px;
+	}
+}
+
+
+footer .wave#wave4
+{
+	z-index: 999;
+	opacity: 0.8;
+	bottom: 20px;
+	animation: animateWave_04 3s  linear infinite;
+}
+
+@keyframes animateWave_04
+{
+	0%
+	{
+		background-position-x : 0px;
+	}
+	100%
+	{
+		background-position-x: 1000px;
+	}
+}
+/* ! Dealing with Different Screen Resolutions--------------------------------------  */
+
+ @media screen and (max-width:1024) {
+	
+	.nav-links {
+		width:  60%;
+	}
+	
+ }
+
+ @media screen and (max-width:768px) {
+
+	
+	body {
+		overflow-x: hidden;
+	}
+	
+
+	.nav-links {
+		margin-top: 10px;
+		position: fixed;
+		
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+ 		background-color:#01c4ff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links  li{
+		opacity: 0;
+	}
+	.burger {
+		display: inline-block;
+	}
+.nav-links a{
+	color: rgb(0, 0, 0);
+	/* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+	background-image: linear-gradient(to bottom, #4ca1af  0%, #c4e0e5 100%);
+
+	border-radius: 10px;
+	padding: 13px;
+	 text-decoration: none;
+	 letter-spacing: 1px;
+	 /* font-weight:  ; */
+
+ }
+ .nav-links li :hover{
+	color: #DC143C;
+	 text-decoration: none;
+	 letter-spacing: 3px;
+	 font-weight: bold ;
+	 padding: 13px;
+	/* background: rgb(1, 204, 255); */
+	background-image: linear-gradient(to bottom, #4ca1af  0%, #c4e0e5 100%);
+	border-radius: 15px;
+
+ }
+	
+ }
+ .nav-active {
+	 transform:translateX(0%)
+ }
+
+
+
+ @keyframes navLinkFade {
+	 from {
+		opacity: 0;
+		transform:translateX(50px);
+	}
+	 to {
+		opacity: 1;
+		transform:translateX(0px);
+	 }
+ }
+ .toggle .line1{
+	 transform:rotate(-45deg) translate(-5px,5px);
+ }
+ .toggle .line2{
+	opacity: 0;
+ }
+ .toggle .line3{
+	transform:rotate(45deg) translate(-5px,-5px);
+
+ }
+ h4 {
+    font-size: 2.5em;
+    font-family: 'Road Rage', cursive;
+	color:rgb(31, 29, 29);
+	background-image: linear-gradient(to left, rgba(221, 236, 224, 0.76) 10%, rgb(70, 69, 69));
+	border-radius: 10px;
+	padding: 2px;
+ }
+
+ /*Todo:  This is the animation part */
+ .animg
+ {
+	margin-left: 250px;
+ }
+ #box1 {
+	width: 530px;
+	height: 625px;
+	background-image: url('1.png');
+	position: absolute;
+	bottom: -100%;
+	left: 30%;
+	animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+#box1:after {
+	content: '';
+	position: absolute;
+	width: 530px;
+	height: 625px;
+	background-image: url('2.png');
+	left: 0px;
+	z-index: -1;
+}
+
+@keyframes anim {
+	from{
+		bottom: -100%;
+	}
+	to {
+		bottom: 0%;
+	}
+}
+
+@keyframes anim2 {
+	from{
+		left: 30%;
+		width: 530px;
+	}
+	to {
+		width: 0px;
+		left: 50%;
+	}
+}
+
+/* Adding Our Intro part. */

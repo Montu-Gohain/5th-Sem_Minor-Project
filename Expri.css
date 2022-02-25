@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas ;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #007c72 50%);
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+nav
+{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 70px;
+    border-radius: 10px;
+}
+.container .box
+{
+    position: relative;
+    width: 1500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.container .box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+.container .box::after
+{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(70px);
+    transition: 0.5s;
+}
+.container .box:hover:before,
+.container .box:hover:after
+{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+    background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+
+    content: "1st Semester";
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+
+
+}
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+    background: linear-gradient(315deg,#ffbc00,#ff0058);
+    content: "2nd Semester";
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+
+}
+.container .box:nth-child(4):before,
+.container .box:nth-child(4):after
+{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    content: "3rd Semester";
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+
+}
+.container .box:nth-child(5):before,
+.container .box:nth-child(5):after
+{
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    content: "4th Semester";
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+
+}
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after
+{
+    background: linear-gradient(315deg,#e8198b,#c7eafd);
+    content: "5th Semester";
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+
+}
+.container .box:nth-child(7):before,
+.container .box:nth-child(7):after
+{
+    
+    background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+    content: "Additional Books";
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+
+}
+
+.container .box span
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+.container .box span::before
+{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(10px);
+   opacity: 0;
+   transition: 0.5s;
+   animation: animate 2s ease-in-out infinite;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.container .box:hover span::before
+{
+    top: -50px;
+    left: 50;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+.container .box span::after
+{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(10px);
+   opacity: 1;
+   transition: 0.5s;
+   animation: animate 2s ease-in-out infinite;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+   animation-delay: -1s;
+}
+.container .box:hover span::after
+{
+    bottom: -50px;
+    right: 50;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+@keyframes animate {
+    0%,100%
+    {
+        transform: translateY(10px);
+    }
+    50%
+    {
+        transform: translateY(-10px);
+    }
+}
+
+.container .box .content
+{
+    position: relative;
+    left: 0;
+    margin-left: 20px;
+    padding: 10px ;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transform: 0.5s;
+    color: #fff;
+    text-align: center;
+}
+.container .box:hover .content
+{
+    left: -25px;
+    padding: 10px 10px;
+}
+.container .box .content h2
+{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.container .box .content p
+{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+.container .box .content a
+{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left:55px ;
+}
+.container .box .content a:hover
+{
+    display: inline-block;
+    font-size: 1.1em;
+    color: rgb(253, 253, 253);
+    background: rgba(255, 0, 0, 0.822);
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left:55px ;
+}
+
+/* Designing the book covers  */
+.covr
+{
+    width: 140px;
+    height: 190px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+}

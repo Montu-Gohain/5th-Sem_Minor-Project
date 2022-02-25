@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #131417;
+
+}
+
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fff;
+}
+h2
+{
+  color: rgb(51, 255, 0);
+
+}
+.codebox
+{
+  width: 90%;
+  background-color: grey;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title{
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.content{
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  color: whitesmoke;
+}
+
+.content .image{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+.topic,li,strong
+{
+  font-size: 20px;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+.content .image img{
+  z-index: 111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+a
+{
+  text-decoration: none;
+  color: #00ffff;
+  padding-bottom: 100px;
+}
+
+.content .text-box{
+  z-index: 222;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 500px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(-80px, 50px);
+}
+
+.content .text-box h3{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.section-title{
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.info-title{
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info{
+  width: 700px;
+  margin-left: 50px;
+}
+
+.media-info{
+  width: 400px;
+  margin-left: 50px;
+}
+
+.media-info li{
+  list-style: none;
+  font-size: 1.4em;
+}
+
+
+/* ! Let's style the copy code functionality . ----------------------------------------------------------*/
+h3
+{
+  color: rgb(51, 255, 0);
+  font-family: "Poppins", sans-serif;
+  /* margin-bottom: 10px; */
+}
+.text-boxes
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 160px;
+    color: rgb(255, 255, 255);
+
+}
+.text-boxes .topic 
+{
+  font-size: 18px;  
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+.topic 
+{
+    color: rgb(255, 255, 255);
+}
+.text-boxes .text-box-01
+{
+  height: 380px;
+    max-width: 660px;
+    width: 100%;
+    margin: 55px 0;
+}
+.text-boxes  textarea
+{
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 10px;
+  background: #d2dfd5
+}
+.text-box-01 textarea::-webkit-scrollbar
+{
+    display: none;
+}
+
+#html-btn
+{
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 8px 0;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    background: rgb(50, 96, 206);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    border: 2px solid rgb(50, 96, 206);
+}   
+#html-btn:hover
+{
+    background: #00ffff;
+    border: 2px solid rgb(255, 255, 255);
+
+    color: rgb(0, 0, 0);
+}

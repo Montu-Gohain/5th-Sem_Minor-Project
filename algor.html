@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚙️Algorithm⚙️</title>
+	<link rel="icon" type="image/x-icon" href="favi.png">
+    <!-- Todo: Additing Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Todo: Adding Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="icon" type="image/x-icon" href="favi.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="ROSDS.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+
+
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+                <h4>DCode</h4>
+            </div>
+
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Experi.html">Books</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Algorithms</a></li>
+                  <li><a class="dropdown-item" href="#">Computer Graphics</a></li>
+                  <li><a class="dropdown-item" href="#">Practice questions</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Languages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">C Programming</a></li>
+                  <li><a class="dropdown-item" href="#">C++ Programming</a></li>
+                  <li><a class="dropdown-item" href="#">Java</a></li>
+                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                  <li><a class="dropdown-item" href="#">R Programming</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+   <div class="container">
+            
+      <div class="topic">
+        <h2 class="main-title">Algorithm 1 : Sorting</h2>
+
+        Sorting refers to arranging data in a particular format. Sorting algorithm specifies the way to arrange data in a particular order. Most common orders are in numerical or lexicographical order.
+
+The importance of sorting lies in the fact that data searching can be optimized to a very high level, if data is stored in a sorted manner. Sorting is also used to represent data in more readable formats. Following are some of the examples of sorting in real-life scenarios −
+
+        
+        <ul style="list-style-type: square;"> 
+            <li><strong>elephone Directory</strong> The telephone directory stores the telephone numbers of people sorted by their names, so that the names can be searched easily.</li>
+            <li><strong>Dictionary</strong> The dictionary stores words in an alphabetical order so that searching of any word becomes easy.</li>
+        </ul>
+      
+      </div>
+      <div class="topic">
+        <h3 class="section-title">Bubble Sort</h3><br>
+        Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items.
+
+        <!-- Todo:  <h3 class="section-title">Traverse Operation</h3><br> <br> --> 
+
+          Following program traverses and prints the elements of an array: <br><br>
+
+          <div class="image">
+            <img src="bblsrt.jpg" alt="">
+          </div><br>
+          When we compile and execute the above program, it produces the following result − <br><br>
+          <div class="image">
+            <img src="bblsrtout.jpg" alt="">
+          </div><br>
+          
+          <strong>Worst and Average Case Time Complexity:</strong>  O(n*n). Worst case occurs when array is reverse sorted. <br>
+          <strong>Best Case Time Complexity:</strong> O(n). Best case occurs when array is already sorted. <br>
+          <strong>Auxiliary Space:</strong>O(1) <br>
+          <strong>Boundary Cases::</strong>Bubble sort takes minimum time (Order of n) when elements are already sorted. <br>
+          <strong>Sorting In Place: </strong>Yes
+
+<!-- 
+        <ul style="list-style-type: square;"> 
+        </ul> -->
+      
+      </div>
+
+   </div>
+        <a href="algor3.html" class="nxt">Next Page >> </a>
+          
+      
+          
+        </body>
+      </html>
+            
